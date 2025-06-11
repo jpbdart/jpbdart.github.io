@@ -1,1 +1,178 @@
-A new website will be up and running shortly.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Skills, CV & Resume</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #35495e;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      border-bottom: 2px solid #35495e;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #35495e;
+      font-weight: 600;
+    }
+
+    /* Skills list */
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    ul.skills-list li {
+      background-color: #42b983;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      user-select: none;
+    }
+
+    /* CV & Resume content */
+    .content p {
+      margin-bottom: 1rem;
+    }
+
+    .resume-link {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #35495e;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    .resume-link:hover,
+    .resume-link:focus {
+      background-color: #42b983;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      ul.skills-list {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe's Portfolio</h1>
+  </header>
+
+  <main>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list" aria-label="List of skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git</li>
+        <li>Responsive Design</li>
+        <li>REST APIs</li>
+      </ul>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+      <h2>Curriculum Vitae (CV)</h2>
+      <div class="content">
+        <p><strong>John Doe</strong></p>
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Experienced Web Developer with a focus on front-end and full stack development. Skilled in modern frameworks and best coding practices.</p>
+        <h3>Work Experience:</h3>
+        <ul>
+          <li><strong>Frontend Developer</strong> - XYZ Company (2019 - Present)</li>
+          <li><strong>Junior Web Developer</strong> - ABC Solutions (2017 - 2019)</li>
+        </ul>
+        <h3>Education:</h3>
+        <ul>
+          <li>Bachelor of Computer Science - University of Tech (2013 - 2017)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="content">
+        <p>
+          Download the latest version of my resume for detailed information on projects, technical skills, and professional achievements.
+        </p>
+        <!-- Assuming you have a PDF file to link, replace the "#" with your actual path -->
+        <a class="resume-link" href="resume-john-doe.pdf" download="JohnDoe_Resume.pdf" aria-label="Download John Doe resume PDF">
+          Download Resume (PDF)
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 John Doe. All rights reserved.
+  </footer>
+</body>
+</html>
